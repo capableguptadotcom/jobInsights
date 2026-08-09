@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Evidence-backed AI and ML job-market intelligence for India and California." />
+    <title>JobSignal — AI/ML market intelligence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="#top"><span class="brand-mark">JS</span> JobSignal</a>
+        <div class="nav-links">
+          <a href="#market">Market</a><a href="#roles">Roles</a><a href="#visa">Visa</a><a href="#interviews">Interviews</a><a href="#method">Method</a>
+        </div>
+      </nav>
+      <div class="hero-grid wrap" id="top">
+        <div>
+          <p class="eyebrow">Observed 09 Aug 2026 · directional baseline</p>
+          <h1>Track the work behind the AI title.</h1>
+          <p class="lede">A source-backed view of AI Engineer, ML Engineer, Applied Scientist, and adjacent Data Scientist roles across Bengaluru, Pune, India-remote, and California.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#roles">Explore verified roles</a>
+            <a class="button ghost" href="research/market-primary-sources.md">Read the evidence</a>
+          </div>
+        </div>
+        <aside class="thesis-card">
+          <p class="card-label">Current thesis</p>
+          <h2>Production ownership is the durable signal.</h2>
+          <p>Framework names change. Employers repeatedly ask for reliable systems: data and retrieval, evaluation, deployment, latency, monitoring, and measurable domain outcomes.</p>
+          <div class="confidence"><span></span> Hypothesis to validate biweekly</div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section wrap" id="market">
+        <div class="section-head">
+          <div><p class="eyebrow">Market pulse</p><h2>What the initial sample says</h2></div>
+          <p class="section-note">Counts use collected role observations, not market share. Canonical first-party evidence is weighted above platform discovery.</p>
+        </div>
+        <div class="stats" id="stats" aria-live="polite"></div>
+        <div class="insight-grid">
+          <article class="insight"><span>01</span><h3>AI engineer ≈ product + backend + evaluation</h3><p>RAG and agents appear with APIs, data systems, observability, reliability, and product ownership—not as prompt-only work.</p></article>
+          <article class="insight"><span>02</span><h3>ML engineer splits into model and platform tracks</h3><p>One track builds domain models; the other owns serving, GPUs, inference, data pipelines, rollback, and on-call reliability.</p></article>
+          <article class="insight"><span>03</span><h3>Data scientist remains domain-heavy</h3><p>Banking, retail, supply chain, healthcare, pricing, and analytics roles reward statistics and business framing alongside deployment.</p></article>
+          <article class="insight"><span>04</span><h3>California sponsorship is role-specific</h3><p>“Visa support,” H-1B transfer, and new/unspecified H-1B sponsorship are different leads. The tracker never collapses them.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="skills">
+        <div class="wrap">
+          <div class="section-head"><div><p class="eyebrow">Signal, not buzzwords</p><h2>Durable capability demand</h2></div><p class="section-note">A role can contribute to several capabilities. Bars show prevalence within the current sample.</p></div>
+          <div class="bar-grid" id="capabilities"></div>
+          <div class="tags-panel"><h3>Most repeated raw terms</h3><div class="tag-cloud" id="skill-tags"></div></div>
+        </div>
+      </section>
+
+      <section class="section wrap" id="roles">
+        <div class="section-head"><div><p class="eyebrow">Role explorer</p><h2>Evidence-backed job observations</h2></div><p class="section-note">Open a source before applying. Platform-only rows are discovery leads until confirmed on a company career page.</p></div>
+        <form class="filters" id="filters">
+          <label>Market<select id="market-filter"><option value="">All markets</option><option>India</option><option>California</option></select></label>
+          <label>Role family<select id="family-filter"><option value="">All families</option></select></label>
+          <label>Evidence<select id="tier-filter"><option value="">All tiers</option><option value="A">A · first party</option><option value="B">B · strong discovery</option><option value="C">C · needs verification</option></select></label>
+          <label>Sponsorship<select id="sponsor-filter"><option value="">All statuses</option><option value="h1b_explicit">H-1B explicit</option><option value="h1b_transfer_only">H-1B transfer only</option><option value="visa_unspecified">Visa, route unspecified</option><option value="conditional">Continuing/conditional</option><option value="explicit_no">No sponsorship</option></select></label>
+          <label class="search-label">Search<input id="search-filter" type="search" placeholder="Company, skill, domain…" /></label>
+        </form>
+        <p class="results-meta" id="results-meta"></p>
+        <div class="table-shell">
+          <table>
+            <thead><tr><th>Role</th><th>Location</th><th>Experience</th><th>Capability clues</th><th>Evidence</th><th>Credibility</th><th>Best route</th></tr></thead>
+            <tbody id="jobs-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="visa">
+        <div class="wrap">
+          <div class="section-head"><div><p class="eyebrow">California</p><h2>Visa evidence without wishful thinking</h2></div><p class="section-note">A historical LCA is corroboration, not current intent. A current posting that explicitly names H-1B is the strongest lead.</p></div>
+          <div class="visa-legend"><span class="pill yes">H-1B explicit</span><span class="pill transfer">Transfer only</span><span class="pill maybe">Visa route unclear</span><span class="pill conditional">Continuing/conditional</span><span class="pill no">No sponsorship</span></div>
+          <div class="visa-grid" id="visa-grid"></div>
+          <div class="visa-note"><strong>Ask precisely:</strong> “Does this requisition support a new cap-subject H-1B, a cap-exempt filing, or only an H-1B change of employer?” Save the dated recruiter answer separately from the job-page wording.</div>
+        </div>
+      </section>
+
+      <section class="section wrap" id="interviews">
+        <div class="section-head"><div><p class="eyebrow">Interview signal</p><h2>What candidates must be ready to prove</h2></div><p class="section-note">First-person stories are kept separate from job facts and marked by confidence.</p></div>
+        <div class="prep-grid">
+          <article><b>1</b><h3>Coding & core CS</h3><p>Write clean executable code, reason about data structures, tests, failure cases, and interfaces.</p></article>
+          <article><b>2</b><h3>ML fundamentals</h3><p>Defend baselines, metrics, bias/variance, experiment design, error analysis, and model choice.</p></article>
+          <article><b>3</b><h3>ML/LLM system design</h3><p>Design data, retrieval, training, serving, evaluation, caching, monitoring, and rollback paths.</p></article>
+          <article><b>4</b><h3>Production case study</h3><p>Show latency, cost, reliability, quality, and user impact—not only architecture diagrams.</p></article>
+          <article><b>5</b><h3>Domain & behavioral depth</h3><p>Explain why the problem mattered, trade-offs made, stakeholders aligned, and outcomes measured.</p></article>
+        </div>
+        <div class="story-list" id="interview-stories"></div>
+      </section>
+
+      <section class="section section-tint" id="roadmap">
+        <div class="wrap roadmap-grid">
+          <div><p class="eyebrow">2–3 year learning bet</p><h2>Build a production-shaped profile.</h2><p class="lede-small">For a candidate around six years, depth beats collecting more framework logos.</p></div>
+          <ol class="roadmap">
+            <li><span>Foundation</span><strong>Python + one backend ecosystem + SQL</strong><p>Own APIs, data contracts, testing, profiling, and software design.</p></li>
+            <li><span>Intelligence</span><strong>One model/retrieval workflow with real evaluation</strong><p>Build baselines, error taxonomy, offline tests, and a human review loop.</p></li>
+            <li><span>Operations</span><strong>Deploy, observe, and recover</strong><p>CI/CD, containers, model/prompt versioning, latency, cost, monitoring, and rollback.</p></li>
+            <li><span>Domain</span><strong>Choose a hard workflow</strong><p>Fintech risk, healthcare documents, search/ranking, speech, SRE, or supply chain.</p></li>
+            <li><span>Evidence</span><strong>Publish two defensible case studies</strong><p>Show the decisions, metrics, failures, and measurable outcome—not a demo video alone.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section wrap" id="method">
+        <div class="section-head"><div><p class="eyebrow">Operating system</p><h2>How the tracker stays honest</h2></div></div>
+        <div class="method-grid">
+          <article><h3>Evidence ladder</h3><p>A: live company/ATS page. B: verified platform discovery. C: third-party or anonymous-client lead. Conclusions publish evidence coverage.</p></article>
+          <article><h3>Deduplicate</h3><p>Use company + requisition ID; fall back to normalized title + location + posted date. Cross-posts are not extra demand.</p></article>
+          <article><h3>Track state</h3><p>Active confirmed, stale unconfirmed, closed explicit, or closed inferred after two failed observations.</p></article>
+          <article><h3>Reject scams</h3><p>No fees, no personal-domain recruiter, no unrelated redirect, no unverifiable company, and no document sharing before role identity is established.</p></article>
+        </div>
+        <div class="source-links"><a href="METHODOLOGY.md">Methodology & update runbook</a><a href="research/market-primary-sources.md">Primary-source research</a><a href="data/jobs.json">Raw job observations</a><a href="data/interviews.json">Interview observations</a></div>
+      </section>
+    </main>
+
+    <footer><div class="wrap"><p>JobSignal · directional evidence, not legal or career advice</p><p id="footer-count"></p></div></footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

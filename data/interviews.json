@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sarvam-ml-2026",
+    "date": "2026-06-13",
+    "market": "India",
+    "company": "Sarvam AI",
+    "roleFamily": "ML Engineer",
+    "evidenceType": "First-person candidate account",
+    "confidence": "medium",
+    "signal": "A timed, on-site build exercise tested an end-to-end voice activity detector on supplied audio. Evaluation emphasized accuracy, code quality, and the candidate's explanation of improvements; the follow-up went deep on prior ASR/VAD work.",
+    "topics": ["Hands-on ML build", "Speech", "Model choice", "Code quality", "Trade-offs", "Prior project depth"],
+    "sourceUrl": "https://www.reddit.com/r/developersIndia/comments/1u4uf70/my_interview_experience_with_sarvamai_for_ml/"
+  },
+  {
+    "id": "india-multifirm-llm-2025",
+    "date": "2025-07-27",
+    "market": "India",
+    "company": "Multiple firms",
+    "roleFamily": "AI Engineer",
+    "evidenceType": "First-person multi-company account",
+    "confidence": "medium",
+    "signal": "A candidate reporting 20–30 interviews described a broad loop: Python, implementing ML algorithms, ML and LLM fundamentals, RAG/NLP, DSA, deep-learning system design, deployment, and scale.",
+    "topics": ["Python", "ML fundamentals", "LLM/RAG", "DSA", "ML system design", "Deployment", "Scale"],
+    "sourceUrl": "https://www.reddit.com/r/MachineLearningJobs/comments/1m9vpld/interview_experiences_for_llm_ai_engineer_roles/"
+  },
+  {
+    "id": "ai-interview-prep-2026",
+    "date": "2026-05-03",
+    "market": "Global",
+    "company": "Multiple firms",
+    "roleFamily": "AI Engineer",
+    "evidenceType": "Community interview account",
+    "confidence": "low",
+    "signal": "A recent respondent summarized the common preparation surface as coding, ML system design, ML fundamentals, LLM architectures, attention, and model internals.",
+    "topics": ["Coding", "ML system design", "Attention", "LLM internals", "ML fundamentals"],
+    "sourceUrl": "https://www.reddit.com/r/MachineLearningJobs/comments/1t1yvhb/how_to_prep_for_ai_engineer_interviews/"
+  },
+  {
+    "id": "x-india-callbacks-2026",
+    "date": "2026-07-07",
+    "market": "India",
+    "company": "Multiple firms",
+    "roleFamily": "AI Engineer",
+    "evidenceType": "Candidate market account",
+    "confidence": "low",
+    "signal": "A candidate reported reaching several rounds for remote and office roles up to ₹40 LPA but losing opportunities for varying reasons, including experience mismatch. Useful as a funnel warning, not as a demand estimate.",
+    "topics": ["Experience calibration", "Interview funnel", "Compensation"],
+    "sourceUrl": "https://x.com/dhavaljprasad/status/2074521906691326043"
+  }
+]
