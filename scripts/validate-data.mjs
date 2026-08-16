@@ -4,10 +4,11 @@ const jobs = JSON.parse(await readFile(new URL("../data/jobs.json", import.meta.
 const interviews = JSON.parse(await readFile(new URL("../data/interviews.json", import.meta.url), "utf8"));
 const errors = [];
 const ids = new Set();
+const canonicalSnapshotKeys = new Set();
 const required = ["id","snapshotDate","market","location","company","title","roleFamily","skills","source","sourceUrl","sourceTier","applicationRoute","statusSignal","sponsorship","credibilityScore","confidence"];
 const markets = new Set(["India","California"]);
 const tiers = new Set(["A","B","C"]);
-const sponsorStates = new Set(["not_applicable","h1b_explicit","h1b_transfer_only","visa_unspecified","conditional","explicit_no"]);
+const sponsorStates = new Set(["not_applicable","h1b_explicit","h1b_transfer_only","visa_unspecified","conditional","explicit_no","unknown"]);
 
 for (const [index, job] of jobs.entries()) {
   const label = `jobs[${index}] ${job.id || "(missing id)"}`;
@@ -19,6 +20,11 @@ for (const [index, job] of jobs.entries()) {
   if (!Array.isArray(job.skills) || job.skills.length === 0) errors.push(`${label}: skills must be a non-empty array`);
   if (!Number.isInteger(job.credibilityScore) || job.credibilityScore < 0 || job.credibilityScore > 100) errors.push(`${label}: credibility score must be an integer from 0 to 100`);
   try { new URL(job.sourceUrl); } catch { errors.push(`${label}: sourceUrl is not an absolute URL`); }
+  if (job.canonicalJobUrl) {
+    try { new URL(job.canonicalJobUrl); } catch { errors.push(`${label}: canonicalJobUrl is not an absolute URL`); }
+    const key = `${job.snapshotDate}:${job.canonicalJobUrl.replace(/\/$/, "")}`;
+    if (canonicalSnapshotKeys.has(key)) errors.push(`${label}: duplicate canonicalJobUrl in snapshot`); else canonicalSnapshotKeys.add(key);
+  }
   if (job.market === "California" && job.sponsorship !== "explicit_no" && job.sponsorship !== "not_applicable" && !job.sponsorshipEvidence) errors.push(`${label}: visa claim needs an evidence excerpt`);
 }
 

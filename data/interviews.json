@@ -46,5 +46,17 @@
     "signal": "A candidate reported reaching several rounds for remote and office roles up to ₹40 LPA but losing opportunities for varying reasons, including experience mismatch. Useful as a funnel warning, not as a demand estimate.",
     "topics": ["Experience calibration", "Interview funnel", "Compensation"],
     "sourceUrl": "https://x.com/dhavaljprasad/status/2074521906691326043"
+  },
+  {
+    "id": "retell-ai-mle-process-20260815",
+    "date": "2026-08-15",
+    "market": "California",
+    "company": "Retell AI",
+    "roleFamily": "ML Engineer",
+    "evidenceType": "Employer-published interview process",
+    "confidence": "high",
+    "signal": "The Senior Machine Learning Engineer posting describes a 15-minute recruiter screen, 45-minute MLE coding interview, 45-minute ML deep dive, and a three-hour onsite or virtual loop covering ML system design, ML depth, and a backend-plus-AI practical.",
+    "topics": ["Recruiter screen", "MLE coding", "ML deep dive", "ML system design", "Backend and AI practical"],
+    "sourceUrl": "https://jobs.ashbyhq.com/retell-ai/dcc921b7-fccc-459a-93c2-10adb4aa147a"
   }
 ]
