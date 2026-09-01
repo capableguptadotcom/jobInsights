@@ -58,5 +58,29 @@
     "signal": "The Senior Machine Learning Engineer posting describes a 15-minute recruiter screen, 45-minute MLE coding interview, 45-minute ML deep dive, and a three-hour onsite or virtual loop covering ML system design, ML depth, and a backend-plus-AI practical.",
     "topics": ["Recruiter screen", "MLE coding", "ML deep dive", "ML system design", "Backend and AI practical"],
     "sourceUrl": "https://jobs.ashbyhq.com/retell-ai/dcc921b7-fccc-459a-93c2-10adb4aa147a"
+  },
+  {
+    "id": "loopio-ai-interview-policy-20260901",
+    "date": "2026-09-01",
+    "market": "India",
+    "company": "Loopio",
+    "roleFamily": "ML Engineer",
+    "evidenceType": "Employer-published interview guidance",
+    "confidence": "high",
+    "signal": "The Senior Machine Learning Engineer posting says candidates must not use AI-generated content for live-interview answers; for take-home assignments, AI may provide initial support but the final submission must reflect the candidate's own insights, skills, and decisions.",
+    "topics": ["Live interview integrity", "Take-home assignment", "AI tool use", "Technical communication"],
+    "sourceUrl": "https://jobs.ashbyhq.com/loopio/713e34ce-2e2e-4896-bb00-723cd5c97725"
+  },
+  {
+    "id": "stand-ai-interview-guidance-20260901",
+    "date": "2026-09-01",
+    "market": "California",
+    "company": "Stand Insurance",
+    "roleFamily": "ML Engineer",
+    "evidenceType": "Employer-published interview guidance",
+    "confidence": "high",
+    "signal": "The Machine Learning Engineer posting says candidates should be prepared to discuss how they use and evaluate AI tools; advance discussion with the interviewer is required before using an AI assistant or LLM in any interview portion designed to assess independent thinking, communication, or problem-solving.",
+    "topics": ["AI tool use", "Independent thinking", "Technical communication", "Problem solving"],
+    "sourceUrl": "https://jobs.ashbyhq.com/standinsurance/f3b0ebc3-f2db-4da3-b841-673878f71b42"
   }
 ]

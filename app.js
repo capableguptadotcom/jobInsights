@@ -59,7 +59,7 @@ function renderStats() {
     [h1b, "roles explicitly naming H-1B"]
   ];
   $("#stats").innerHTML = values.map(([value, label]) => `<article class="stat"><strong>${value}</strong><span>${label}</span></article>`).join("");
-  $("#footer-count").textContent = `${jobs.length} roles · ${interviews.length} interview observations · latest refresh 2026-08-15`;
+  $("#footer-count").textContent = `${jobs.length} roles · ${interviews.length} interview observations · latest refresh 2026-09-01`;
 }
 
 function renderCapabilities() {

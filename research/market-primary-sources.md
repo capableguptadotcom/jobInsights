@@ -1,8 +1,15 @@
 # AI/ML job-market intelligence: primary-source baseline
 
 **Scope:** Bengaluru, Pune, and India-remote roles (focus: roughly 3–6 years of experience), plus California roles with explicit work-visa evidence
-**Observed:** 2026-08-09 (America/Los_Angeles)
+**Observed:** baseline 2026-08-09; refreshed 2026-09-01 (America/Los_Angeles)
 **Source standard:** official employer career pages and employer-specific ATS tenants for job facts; U.S. government sources for immigration definitions and employer history; first-party employer pages for hiring/interview guidance. LinkedIn, Naukri, Instahyre, X, and aggregators are discovery channels, not final evidence.
+
+## Refresh log — 2026-09-01
+
+- Added two live A-tier observations: Loopio's India-remote Senior Machine Learning Engineer (4+ years of production ML; retrieval, embeddings, fine-tuning, serving, evaluation, and observability) and Stand Insurance's San Francisco hybrid multimodal MLE. [Loopio](https://jobs.ashbyhq.com/loopio/713e34ce-2e2e-4896-bb00-723cd5c97725), [Stand](https://jobs.ashbyhq.com/standinsurance/f3b0ebc3-f2db-4da3-b841-673878f71b42)
+- Closed India observations: Citi's Pune Full Stack AI-Enabled Developer and METRO's Pune AI Engineer have employer pages indicating the roles are no longer open/expired. Amazon CMT and Sarvam Full Stack AI met the documented second-consecutive-failed-check threshold and are now `closed_inferred`. The prior closed Uplane and Clera California pages remain unavailable.
+- Reverified every California role's exact visa wording. New/unspecified H-1B remains limited to Composite, zaimler, and Retell; Reka, Mercator, and new Stand are transfer-only; Poesis remains conditional; Yutori's two roles and Apiphany remain visa-route-unspecified. Stand explicitly says it does not sponsor new work visas and considers certain H-1B transfers only.
+- The sample is now 51 job observations, 24 A-tier (47.1%), and 7 interview observations. The two additions reinforce the existing production-delivery pattern—retrieval/evaluation/observability in India remote and multimodal evaluation/deployment in California—but do not establish a three-snapshot trend, so dashboard conclusions remain otherwise unchanged.
 
 ## Executive readout
 
