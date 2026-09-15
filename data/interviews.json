@@ -82,5 +82,17 @@
     "signal": "The Machine Learning Engineer posting says candidates should be prepared to discuss how they use and evaluate AI tools; advance discussion with the interviewer is required before using an AI assistant or LLM in any interview portion designed to assess independent thinking, communication, or problem-solving.",
     "topics": ["AI tool use", "Independent thinking", "Technical communication", "Problem solving"],
     "sourceUrl": "https://jobs.ashbyhq.com/standinsurance/f3b0ebc3-f2db-4da3-b841-673878f71b42"
+  },
+  {
+    "id": "capable-mle-process-20260915",
+    "date": "2026-09-15",
+    "market": "California",
+    "company": "Capable Labs",
+    "roleFamily": "ML Engineer",
+    "evidenceType": "Employer-published interview process",
+    "confidence": "high",
+    "signal": "The Machine Learning Engineer posting describes an initial application, two phone screens, and an in-person San Francisco work trial intended to give both sides a realistic sense of working together.",
+    "topics": ["Application", "Phone screens", "In-person work trial", "Scientific ML", "Technical collaboration"],
+    "sourceUrl": "https://jobs.ashbyhq.com/capable/06bf1e55-a317-462a-872d-472caef579ab"
   }
 ]
